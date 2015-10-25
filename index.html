@@ -1,0 +1,192 @@
+
+<html>
+<head>
+	<title>Lord of The Rings Movie Quotes</title>
+	<style>
+	.container{
+		width: 80%;
+		margin: auto
+
+	}
+	</style>
+	
+	<script>
+		function answers(){
+			var q1
+			var correctAnswer1 = document.getElementById("q1c") 
+			if (correctAnswer1.checked === true){
+				q1 = 1;
+			}else{
+				q1 = 0;
+			}
+			var q2
+			var correctAnswer2 = document.getElementById("q2b") 
+			if (correctAnswer2.checked === true){
+				q2 = 1;
+			}else{
+				q2 = 0;
+			}
+
+
+			var q3;
+			var correctAnswer3 = document.getElementById("q3b") 
+			if (correctAnswer3.checked === true){
+				q3 = 1;
+			}else{
+				q3 = 0;
+			}
+
+			var q4;
+			var correctAnswer4 = document.getElementById("q4c") 
+			if (correctAnswer4.checked === true){
+				q4 = 1;
+			}else{
+				q4 = 0;
+			}
+
+			var q5;
+			var correctAnswer5 = document.getElementById("q5a") 
+			if (correctAnswer5.checked === true){
+				q5 = 1;
+			}else{
+				q5 = 0;
+			}
+
+			var q6
+			var correctAnswer6 = document.getElementById("q6a") 
+			if (correctAnswer6.checked === true){
+				q6 = 1;
+			}else{
+				q6 = 0;
+			}
+
+			var q7;
+			var correctAnswer7 = document.getElementById("q7d") 
+			if (correctAnswer7.checked === true){
+				q7 = 1;
+			}else{
+				q7 = 0;
+			}
+
+			var q8;
+			var correctAnswer8 = document.getElementById("q8b") 
+			if (correctAnswer8.checked === true){
+				q8 = 1;
+			}else{
+				q8 = 0;
+			}
+
+			
+			var results = (q1+q2+q3+q4+q5+q6+q7+q8);
+			//var newWindow = window.open("", "width=300, height=100")
+			if (results == 8){
+				document.write("You got " + results + " out of 8 questions right.  You are a true fan.")
+			}
+			if (results <= 7 && results >= 5){
+				document.write("You got " + results + " out of 8 questions right.  Not bad, the Fellowship would be proud!")
+			}
+			else {
+				document.write("You got " + results + " out of 8 questions right.  The Fellowship is shaking their head.  We suggest you watch the trilogy again.")
+			}
+		}
+
+
+
+		
+	</script>
+		
+</head>
+<body>
+
+<div class = "container">
+
+	<h1>Are you a REAL Lord of the Rings fan?  Let's find out.  Who  said these famous lines? </h1>
+
+	<p class="question">1. There is only one Lord of the Ring, only one who can bend it to his will. And he does not share power.</p>
+	<ul class="answers">
+		<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Frodo</label><br/>
+		<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Gollum</label><br/>
+		<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Gandalf</label><br/>
+		<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Arwen</label>
+	</ul>
+	<hr>
+	<p class="question">2. Mordor. The one place in Middle Earth we don't want to see any closer. And it's the one place we're trying to get to. It's just where we can't get. Let's face it, Mr. Frodo, we're lost.</p>
+	<ul class="answers">
+		<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">Gollum</label><br/>
+		<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">Sam</label><br/>
+		<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">Gimli</label><br/>
+		<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">Gandalf</label><br/>
+	</ul>
+	<hr>
+	<p class="question">3. My precious.</p>
+	<ul class="answers">
+		<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Aragorn</label><br/>
+		<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">Golum</label><br/>
+		<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Gandalf</label><br/>
+		<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Bilbo</label><br/>
+	</ul>
+	<hr>
+	<p class="question">4. A day may come when the courage of men fail but it is not THIS day.</p>
+	<ul class="answers">
+		<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Gimli</label><br/>
+		<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Gandalf</label><br/>
+		<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Aragorn</label><br/>
+		<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Frodo</label><br/>
+	</ul>
+	<hr>
+	<p class="question">5. I would rather share one lifetime with you than face all the Ages of this world alone.</p>
+	<ul class="answers">
+		<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">Arwen</label><br/>
+		<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">Golum</label><br/>
+		<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Frodo</label><br/>
+		<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">Legolas</label><br/>
+	</ul>
+	<hr>
+	<p class="question">6. But the fat Hobbit, he knows. Eyes always watching.</p>
+		<ul class="answers">
+		<input type="radio" name="q6" value="a" id="q6a"><label for="q6a">Golum</label><br/>
+		<input type="radio" name="q6" value="b" id="q6b"><label for="q6b">Orc</label><br/>
+		<input type="radio" name="q6" value="c" id="q6c"><label for="q6c">Arwen</label><br/>
+		<input type="radio" name="q6" value="d" id="q6d"><label for="q6d">Boromir</label><br/>
+	</ul>
+	<hr>
+	<p class="question">7. Fly, you fools.</p>
+	<ul class="answers">
+		<input type="radio" name="q7" value="a" id="q7a"><label for="q7a">Galandriel</label><br/>
+		<input type="radio" name="q7" value="b" id="q7b"><label for="q7b">Legolas</label><br/>
+		<input type="radio" name="q7" value="c" id="q7c"><label for="q7c">Frodo</label><br/>
+		<input type="radio" name="q7" value="d" id="q7d"><label for="q7d">Gandalf</label><br/>
+	</ul>
+	<hr>
+	<p class="question">8. Our people, our people. I would have would have called you my brother, my captain, my king.</p>
+	<ul class="answers">
+		<input type="radio" name="q8" value="a" id="q8a"><label for="q8a">Gimli</label><br/>
+		<input type="radio" name="q8" value="b" id="q8b"><label for="q8b">Boromir</label><br/>
+		<input type="radio" name="q8" value="c" id="q8c"><label for="q8c">Aragorn</label><br/>
+		<input type="radio" name="q8" value="d" id="q8d"><label for="q8d">Sam</label><br/>
+	</ul>
+	<br>
+	<button type="button" onclick="answers()">SUBMIT</button>
+<!--  
+<p class="question">9. What is the answer to this question?</p>
+<ul class="answers">
+<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Answer 1</label><br/>
+<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Answer 2</label><br/>
+<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Answer 3</label><br/>
+<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Answer 4</label><br/>
+</ul>
+
+<p class="question">9. What is the answer to this question?</p>
+<ul class="answers">
+<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Answer 1</label><br/>
+<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Answer 2</label><br/>
+<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Answer 3</label><br/>
+<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Answer 4</label><br/>
+</ul>
+-->
+
+
+
+</div>	
+</body>
+</html>
